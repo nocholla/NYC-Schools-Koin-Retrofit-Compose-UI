@@ -7,6 +7,8 @@ import com.nocholla.nyc.schools.koin.retrofit.compose.ui.data.local.database.Sch
 import com.nocholla.nyc.schools.koin.retrofit.compose.ui.data.repository.SchoolRepositoryImpl
 import com.nocholla.nyc.schools.koin.retrofit.compose.ui.domain.usecase.GetSchoolsUseCase
 import com.nocholla.nyc.schools.koin.retrofit.compose.ui.domain.usecase.GetScoresUseCase
+import com.nocholla.nyc.schools.koin.retrofit.compose.ui.presentation.viewmodel.SchoolViewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -45,6 +47,9 @@ val appModule = module {
     single { get<SchoolDatabase>().schoolDao() }
     single { get<SchoolDatabase>().scoreDao() }
     single { SchoolRepositoryImpl() }
+
     factory { GetSchoolsUseCase() }
     factory { GetScoresUseCase() }
+
+    viewModel { SchoolViewModel() }
 }
