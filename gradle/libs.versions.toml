@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.6.2"
 lifecycleViewmodelKtx = "2.6.2"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
+navigationCompose = "2.7.7"
 coroutines = "1.7.3"
 okhttp = "4.12.0"
 gson = "2.10.1"
@@ -36,6 +37,9 @@ androidx-activity-compose = { group = "androidx.activity", name = "activity-comp
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+
+# Navigation Compose
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 # Koin for Android
 koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
@@ -70,4 +74,3 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
