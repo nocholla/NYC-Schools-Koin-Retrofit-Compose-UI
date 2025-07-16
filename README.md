@@ -10,6 +10,8 @@
 
 ✅ Koin for dependency injection
 
+✅ Room for local database
+
 ✅ MVVM architecture with ViewModel & Repository layers
 
 ✅ Retrofit for making network API calls
